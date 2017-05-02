@@ -53,13 +53,16 @@ div a {
 	color: yellow;
 }
 
-	img.bg {
-		width: 100%;
-		position: fixed;
-		left: 0;
-		top: 0;
-		z-index: -5;
-	}
+/*===================
+Main*/
+
+img.bg {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -5;
+}
 
 #blocFigure {
 	width: 100%;
@@ -67,6 +70,44 @@ div a {
 	flex-direction: column;
 }
 
+section {
+	width: 80%;
+	color: yellow;
+	text-align: justify;
+	margin: auto;
+}
+
+/*===================
+Form*/
+
+form {
+	display: flex;
+}
+
+form > div {
+	width: 50%;
+}
+
+form > div + div {
+	margin-left: 1em;
+}
+
+div > p {
+	display: flex;
+}
+
+form input:not([type=submit]) {
+	flex: 1;
+}
+
+div + div {
+	display: flex;
+	flex-direction: column;
+}
+
+textarea {
+	flex: 1;
+}
 
 
 /*=======================================================*/
@@ -156,6 +197,7 @@ div a {
 	#products:hover {
 		right: 0;
 	}
+
 }
 
 /*=======================================================*/
