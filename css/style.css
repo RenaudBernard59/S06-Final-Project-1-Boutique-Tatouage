@@ -198,6 +198,33 @@ textarea {
 		right: 0;
 	}
 
+	form {
+		flex-direction: column;
+	}
+
+	form p {
+		display: block;
+	}
+
+	label {
+		display: block;
+		text-align: left;
+	}
+
+	form > div {
+		width: auto ;
+	}
+
+	form > div + div {
+		margin-left: 0;
+		margin-bottom: row;
+		order: -1;		
+	}
+
+	input {
+		width: 100%;
+	}
+
 }
 
 /*=======================================================*/
