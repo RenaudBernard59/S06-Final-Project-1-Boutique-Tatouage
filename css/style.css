@@ -1,0 +1,185 @@
+/*
+#########################################################
+# 					General 							#
+#########################################################
+ */
+
+/*===================
+General */
+
+body {
+	background-color: black;
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+/*===================
+Header*/
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: rgb(26,26,26);
+
+}
+
+header h1 {
+	color: white;
+}
+
+header nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+}
+
+nav div {
+	padding: 15px;
+	border: solid yellow 2px;
+	border-radius: 5px;
+
+}
+
+div a {
+	color: yellow;
+}
+
+	img.bg {
+		width: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: -5;
+	}
+
+
+
+
+
+
+/*=======================================================*/
+
+@media screen and (min-width: 1280px)
+{
+
+	div.description {
+		position: relative;
+		left: 200px;
+		top: 200px;
+		z-index: 5;
+		background-color: rgba(255,255,255,0.5);
+		color: black;
+		width: 800px;
+		border-radius: 30px;
+		padding: 20px;
+	}
+		#products { 
+	    width : 150px;
+	    font-size : 10px;   
+	    text-align : left;   
+	    padding : 30px 20px 10px 35px;
+	    /** le "nav" est fixe */
+	    position : fixed;
+	    right: 0;    
+	    top : 200px;
+	    
+	    /** on met une valeur négative pour le masquer en partie sur la droite */
+	    right : -160px;
+	    background-color: rgb(26,26,26);
+	    box-shadow: 2px 2px 1px 1px rgba(20,20,20,0.3);
+
+	    /** transitions sur position right, couleur ombre et transformation
+	     version "éclatée" en 4 propriétés
+	    on joue sur les délais et durées pour l'effet de "sortie" puis d'"avancée"*/    
+
+	    transition-property : right, background-color, box-shadow, transform;
+	    transition-duration : 0.5s, 1.5s, 0.75s, 0.75s;
+	    transition-delay : 0.5s, 0s, 1s, 1s;
+	    transition-timing-function : ease-out,linear, ease-in-out, ease-in-out;
+		box-sizing:content-box;
+		line-height: normal;
+		z-index: 10;
+		border-radius: 30px;
+		}
+
+	#products:hover {
+		right: 0;
+	}
+}
+
+
+
+
+/*=======================================================*/
+
+@media screen and (max-width: 1280px)
+{
+	div.description {
+		position: relative;
+		left: 150px;
+		top: 50px;
+		z-index: 5;
+		background-color: rgba(255,255,255,0.5);
+		color: black;
+		width: 500px;
+		border-radius: 30px;
+		padding: 20px;
+	}
+		#products { 
+	    width : 150px;
+	    font-size : 10px;   
+	    text-align : left;   
+	    padding : 30px 20px 10px 35px;
+	    /** le "nav" est fixe */
+	    position : fixed;
+	    right: 0;    
+	    top : 200px;
+	    
+	    right : 0px;
+	    background-color: rgb(26,26,26);
+	    box-shadow: 2px 2px 1px 1px rgba(20,20,20,0.3);
+		z-index: 10;
+		border-radius: 30px;
+
+	#products:hover {
+		right: 0;
+	}
+}
+
+/*=======================================================*/
+
+@media screen and (max-width: 350px)
+{
+	div.description {
+		position: relative;
+		left: 0;
+		top: 100px;
+		z-index: 5;
+		background-color: rgba(255,255,255,0.5);
+		color: black;
+		width: 300px;
+		border-radius: 30px;
+		padding: 20px;
+	}
+	#products { 
+	    width : 150px;
+	    font-size : 10px;   
+	    text-align : left;   
+	    padding : 30px 20px 10px 35px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+
+}
+
+
